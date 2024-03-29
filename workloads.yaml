@@ -34,7 +34,7 @@ spec:
     spec:
       containers:
         - name: position-simulator
-          image: richardchesterwood/k8s-fleetman-position-simulator:release1-arm64
+          image: richardchesterwood/k8s-fleetman-position-simulator:release2-arm64
           env:
           - name: SPRING_PROFIlES_ACTIVE
             value: production-microservice
@@ -57,7 +57,7 @@ spec:
     spec:
       containers:
         - name: position-tracker
-          image: richardchesterwood/k8s-fleetman-position-tracker:release1-arm64
+          image: richardchesterwood/k8s-fleetman-position-tracker:release3-arm64
           env:
           - name: SPRING_PROFIlES_ACTIVE
             value: production-microservice
@@ -80,7 +80,7 @@ spec:
     spec:
       containers:
         - name: api-gateway
-          image: richardchesterwood/k8s-fleetman-api-gateway:release1-arm64
+          image: richardchesterwood/k8s-fleetman-api-gateway:release2-arm64
           env:
           - name: SPRING_PROFIlES_ACTIVE
             value: production-microservice
@@ -103,7 +103,7 @@ spec:
     spec:
       containers:
         - name: webapp
-          image: richardchesterwood/k8s-fleetman-webapp-angular:release1-arm64
+          image: richardchesterwood/k8s-fleetman-webapp-angular:release2-arm64
           env:
           - name: SPRING_PROFIlES_ACTIVE
             value: production-microservice
